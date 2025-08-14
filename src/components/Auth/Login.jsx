@@ -10,7 +10,7 @@ const Login = () => {
   };
   return (
     <div className="flex w-full h-screen items-center justify-center">
-      <div className="border-2 border-red-600 p-8 rounded-lg">
+      <div id="login" className="border-2 border-red-600 p-8 rounded-lg">
         <form className="flex flex-col gap-1" onSubmit={handleSubmit}>
           <label htmlFor="email" className="text-lg text-emerald-900 p-2">
             Email
