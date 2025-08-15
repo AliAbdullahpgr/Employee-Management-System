@@ -229,8 +229,8 @@ const employees = [
 const admin = [
   {
     id: 1,
-    email: "admin@example.com",
-    password: "123",
+    email: "admin@me.com",
+    password: "admin",
   },
 ];
 
@@ -238,7 +238,21 @@ export const setLocalStorage = () => {
     localStorage.setItem('employees',JSON.stringify(employees))
     localStorage.setItem('admin',JSON.stringify(admin))
 }
+
 export const getLocalStorage = () => {
-  const employee = JSON.parse(localStorage.getItem('employees'));
-  const admin = JSON.parse(localStorage.getItem('admin'));
+  try {
+    const employeesData = JSON.parse(localStorage.getItem('employees'));
+    const adminData = JSON.parse(localStorage.getItem('admin'));
+    
+    return {
+      employees: employeesData || employees, // Use the original data if localStorage is null
+      admin: adminData || admin
+    };
+  } catch (error) {
+    console.error('Error parsing localStorage data:', error);
+    return {employees: employees, admin: admin}; // Return the original data on error
+  }
 }
+
+// Always initialize with the actual data
+setLocalStorage();
