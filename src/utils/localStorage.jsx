@@ -1,12 +1,13 @@
 const employees = [
   {
     "id": 1,
-    "email": "employee1@example.com",
-    "password": "123",
+    "name": "John Smith",
+    "email": "employee@me.com",
+    "password": "employee",
     "tasks": [
       {
         "title": "Prepare Sales Report",
-        "description": "Compile Q2 sales data into a summarized report.",
+        "description": "Compile Q2 sales data and summarize key trends for management, including charts and actionable insights.",
         "date": "2025-08-20",
         "category": "Reporting",
         "active": true,
@@ -16,7 +17,7 @@ const employees = [
       },
       {
         "title": "Client Follow-up",
-        "description": "Email follow-up to top-tier clients.",
+        "description": "Email top-tier clients for feedback and satisfaction, aiming to identify upselling opportunities.",
         "date": "2025-08-22",
         "category": "Communication",
         "active": false,
@@ -26,7 +27,7 @@ const employees = [
       },
       {
         "title": "Inventory Check",
-        "description": "Verify stock levels for warehouse items.",
+        "description": "Verify warehouse stock levels, update system records, and report discrepancies.",
         "date": "2025-08-18",
         "category": "Inventory",
         "active": true,
@@ -38,12 +39,13 @@ const employees = [
   },
   {
     "id": 2,
-    "email": "employee2@example.com",
+    "name": "Sarah Johnson",
+    "email": "employee1@example.com",
     "password": "123",
     "tasks": [
       {
         "title": "Update Website Content",
-        "description": "Replace outdated product descriptions.",
+        "description": "Replace outdated product info with SEO-optimized content and review for accuracy.",
         "date": "2025-08-15",
         "category": "Web",
         "active": true,
@@ -53,7 +55,7 @@ const employees = [
       },
       {
         "title": "Team Meeting",
-        "description": "Discuss new feature rollout plan.",
+        "description": "Discuss feature rollout plan, assign responsibilities, and set timeline expectations.",
         "date": "2025-08-21",
         "category": "Meetings",
         "active": false,
@@ -63,7 +65,7 @@ const employees = [
       },
       {
         "title": "Market Research",
-        "description": "Analyze competitor pricing strategy.",
+        "description": "Analyze competitor pricing and market trends to inform our pricing strategy.",
         "date": "2025-08-19",
         "category": "Research",
         "active": false,
@@ -73,7 +75,7 @@ const employees = [
       },
       {
         "title": "Prepare Presentation",
-        "description": "Design slides for quarterly review.",
+        "description": "Design slides for quarterly review, including metrics, updates, and recommendations.",
         "date": "2025-08-25",
         "category": "Design",
         "active": true,
@@ -85,12 +87,13 @@ const employees = [
   },
   {
     "id": 3,
+    "name": "Michael Davis",
     "email": "employee3@example.com",
     "password": "123",
     "tasks": [
       {
         "title": "Social Media Campaign",
-        "description": "Plan September social media schedule.",
+        "description": "Plan September schedule with engaging content and monitor analytics for optimization.",
         "date": "2025-08-28",
         "category": "Marketing",
         "active": true,
@@ -100,7 +103,7 @@ const employees = [
       },
       {
         "title": "Code Review",
-        "description": "Review pull requests for backend repo.",
+        "description": "Review backend pull requests for code quality and provide feedback to developers.",
         "date": "2025-08-17",
         "category": "Development",
         "active": false,
@@ -110,7 +113,7 @@ const employees = [
       },
       {
         "title": "Bug Fixing",
-        "description": "Resolve reported UI glitches.",
+        "description": "Resolve UI glitches, test fixes, and update documentation for improved stability.",
         "date": "2025-08-16",
         "category": "Development",
         "active": false,
@@ -122,12 +125,13 @@ const employees = [
   },
   {
     "id": 4,
+    "name": "Emily Wilson",
     "email": "employee4@example.com",
     "password": "123",
     "tasks": [
       {
         "title": "Onboarding New Staff",
-        "description": "Conduct training session for new hires.",
+        "description": "Train new hires on company policies and job skills, and organize welcome sessions.",
         "date": "2025-08-26",
         "category": "HR",
         "active": true,
@@ -137,7 +141,7 @@ const employees = [
       },
       {
         "title": "Data Backup",
-        "description": "Backup all company files to cloud storage.",
+        "description": "Backup company files to cloud, verify integrity, and maintain documentation.",
         "date": "2025-08-14",
         "category": "IT",
         "active": false,
@@ -147,7 +151,7 @@ const employees = [
       },
       {
         "title": "Vendor Meeting",
-        "description": "Negotiate contract renewal terms.",
+        "description": "Negotiate contract renewal terms and review supplier performance for improvements.",
         "date": "2025-08-18",
         "category": "Procurement",
         "active": true,
@@ -157,7 +161,7 @@ const employees = [
       },
       {
         "title": "Security Audit",
-        "description": "Perform a security audit on network systems.",
+        "description": "Audit network systems for vulnerabilities and prepare a report with recommendations.",
         "date": "2025-08-24",
         "category": "Security",
         "active": true,
@@ -167,7 +171,7 @@ const employees = [
       },
       {
         "title": "Policy Update",
-        "description": "Revise HR policy documents.",
+        "description": "Revise HR policy documents and communicate changes to staff after legal review.",
         "date": "2025-08-20",
         "category": "HR",
         "active": false,
@@ -179,12 +183,13 @@ const employees = [
   },
   {
     "id": 5,
+    "name": "David Brown",
     "email": "employee5@example.com",
     "password": "123",
     "tasks": [
       {
         "title": "Prepare Budget Plan",
-        "description": "Draft budget plan for next fiscal quarter.",
+        "description": "Draft budget plan for next quarter, analyze data, and consult department heads.",
         "date": "2025-08-30",
         "category": "Finance",
         "active": true,
@@ -194,7 +199,7 @@ const employees = [
       },
       {
         "title": "System Upgrade",
-        "description": "Upgrade all workstations to latest OS.",
+        "description": "Upgrade workstations to latest OS, plan rollout, and provide user training.",
         "date": "2025-08-15",
         "category": "IT",
         "active": false,
@@ -204,7 +209,7 @@ const employees = [
       },
       {
         "title": "Customer Feedback",
-        "description": "Collect and analyze customer survey data.",
+        "description": "Collect and analyze survey data to identify satisfaction trends and improvements.",
         "date": "2025-08-19",
         "category": "Customer Service",
         "active": false,
@@ -214,7 +219,7 @@ const employees = [
       },
       {
         "title": "Newsletter Draft",
-        "description": "Write September newsletter for clients.",
+        "description": "Write September newsletter with company updates and product highlights for clients.",
         "date": "2025-08-27",
         "category": "Marketing",
         "active": true,
@@ -245,14 +250,13 @@ export const getLocalStorage = () => {
     const adminData = JSON.parse(localStorage.getItem('admin'));
     
     return {
-      employees: employeesData || employees, // Use the original data if localStorage is null
+      employees: employeesData || employees,
       admin: adminData || admin
     };
   } catch (error) {
     console.error('Error parsing localStorage data:', error);
-    return {employees: employees, admin: admin}; // Return the original data on error
+    return {employees: employees, admin: admin};
   }
 }
 
-// Always initialize with the actual data
 setLocalStorage();
