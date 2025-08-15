@@ -20,7 +20,7 @@ const TaskList = ({ data }) => {
   return (
     <div
       id="tasklist"
-      className=" w-full h-[60%] overflow-x-auto py-5 flex items-center gap-5 justify-start mt-6 flex-nowrap"
+      className="w-full h-96 px-2 overflow-x-auto py-2 flex items-start gap-6 justify-start flex-nowrap scroll-smooth"
     >
       {data.tasks.map((elem, idx) => {
         if (elem.failed) {
@@ -35,8 +35,18 @@ const TaskList = ({ data }) => {
         if (elem.active) {
           return <AcceptTask key={idx} data={elem} />;
         }
-        return null; 
+        return null;
       })}
+      
+      {data.tasks.length === 0 && (
+        <div className="w-full h-64 flex flex-col items-center justify-center text-gray-400">
+          <svg className="w-16 h-16 mb-4 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M9 5H7a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002 2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" />
+          </svg>
+          <p className="text-lg font-medium">No tasks assigned yet</p>
+          <p className="text-sm opacity-75">Tasks assigned to you will appear here</p>
+        </div>
+      )}
     </div>
   );
 };

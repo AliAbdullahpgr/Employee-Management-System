@@ -2,19 +2,47 @@ import React from 'react'
 
 const CompleteTask = ({data}) => {
   return (
-    <>
-      <div className=" h-full flex-shrink-0 w-[335px] bg-blue-400 rounded-xl">
-        <div className="font-medium flex justify-between items-center p-5 mt-2">
-          <h3 className="bg-red-600 px-3 py-1 rounded-md text-sm">{data.category}</h3>
-          <h4 className="text-sm ">{data.date}</h4>
+    <div className="group h-80 flex-shrink-0 w-80 bg-gradient-to-br from-green-500/10 to-emerald-500/10 backdrop-blur-sm rounded-2xl border border-green-500/20 hover:border-green-400/40 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-green-500/10">
+      <div className="p-6 h-full flex flex-col">
+        {/* Header */}
+        <div className="flex justify-between items-center mb-4">
+          <span className="px-3 py-1 bg-gradient-to-r from-green-500 to-emerald-500 text-white text-xs font-semibold rounded-full">
+            {data.category}
+          </span>
+          <div className="flex items-center text-green-400 text-xs">
+            <svg className="w-3 h-3 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+            </svg>
+            {data.date}
+          </div>
         </div>
-        <h2 className="px-5 text-[27px] font-semibold">{data.title}</h2>
-        <p className="px-5 text-sm mt-2">{data.description}</p>
-        <div className='flex justify-between mt-6 px-4'>
-                <button className='bg-green-500 rounded font-medium py-1 px-2 text-xs'>Completed</button>
+
+        {/* Content */}
+        <div className="flex-1">
+          <h2 className="text-xl font-bold text-white mb-3 line-clamp-2 group-hover:text-green-100 transition-colors">
+            {data.title}
+          </h2>
+          <p className="text-gray-400 text-sm leading-relaxed line-clamp-4">
+            {data.description}
+          </p>
+        </div>
+
+        {/* Status Badge */}
+        <div className="mt-4 pt-4 border-t border-green-500/10">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center text-green-400 text-xs">
+              <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              Completed
+            </div>
+            <div className="px-3 py-1 bg-green-500/20 text-green-400 text-xs font-semibold rounded-full border border-green-500/30">
+              ✓ Done
+            </div>
+          </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
