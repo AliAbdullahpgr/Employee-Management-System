@@ -35,8 +35,10 @@ A modern, responsive Employee Management System built with React.js, featuring t
 - **Password:** `admin`
 
 ### Employee Login
-- **Email:** `employee@me.com`  
-- **Password:** `employee`
+- **Email:** `employee2@example.com`  
+- **Email:** `employee3@example.com`  
+- **Email:** `employee4@example.com`  
+- **Password:** `123`
 
 ## 📸 Screenshots
 
