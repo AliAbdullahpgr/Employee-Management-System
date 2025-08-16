@@ -43,13 +43,14 @@ A modern, responsive Employee Management System built with React.js, featuring t
 ## 📸 Screenshots
 
 ### Login Page
-![Login Screenshot](https://via.placeholder.com/800x500/1a1a1a/ffffff?text=Modern+Login+Interface)
+[![employee1.png](https://i.postimg.cc/j2R6GhQx/employee1.png)](https://postimg.cc/BLw1FHVk)
 
 ### Admin Dashboard
-![Admin Dashboard](https://via.placeholder.com/800x500/1a1a1a/ffffff?text=Admin+Task+Management)
+[![employee2.png](https://i.postimg.cc/tTQNzbsV/employee2.png)](https://postimg.cc/bGgnzKHz)
+[![employee3.png](https://i.postimg.cc/763MsRzt/employee3.png)](https://postimg.cc/1nzq4JJD)
 
 ### Employee Dashboard
-![Employee Dashboard](https://via.placeholder.com/800x500/1a1a1a/ffffff?text=Employee+Task+View)
+[![employee4.png](https://i.postimg.cc/9QkprZVb/employee4.png)](https://postimg.cc/DSqsNWS4)
 
 ## 🛠️ Tech Stack
 
